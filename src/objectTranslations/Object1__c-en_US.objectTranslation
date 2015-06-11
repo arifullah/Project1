@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Object1</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>MD_Objects</value>
+    </caseValues>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>Object1__c</name>
+        <relationshipLabel><!-- MD_Objects --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

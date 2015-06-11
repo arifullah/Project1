@@ -1,0 +1,24 @@
+<apex:page sidebar="False" controller="RegistrationCon" showHeader="false" standardStylesheets="true" >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageMessages / >
+                <apex:pageblockSection title="Registartion Page" >
+                    <apex:inputtext label="First Name" required="true" />
+                    <apex:inputText label="Last Name"/>
+                    <apex:selectList label="Gender" multiselect="false" size="1" >
+                        <apex:selectOption itemLabel="None" itemValue="None" title="Gender"/>
+                        <apex:selectOption itemLabel="Male" itemValue="Male" title="Gender"/>
+                        <apex:selectOption itemLabel="Female" itemValue="Female" title="Gender"/>
+                    </apex:selectList>
+                    <apex:inputtext label="Phone" />
+                    <apex:inputtext label="Organization" required="true"/>
+                    <apex:inputCheckbox label="Non Profit "/>
+                    <apex:inputtext label="City" />
+                    <apex:inputtext label="Country" />
+                </apex:pageblockSection>
+                <apex:pageblockButtons >
+                    <apex:commandButton value="Submit" action="{!save}"/>
+                </apex:pageblockButtons>
+            </apex:pageBlock>
+        </apex:form>
+    </apex:page>
